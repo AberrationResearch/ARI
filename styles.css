@@ -1,3 +1,8 @@
 body {
     font-family: Arial, sans-serif;
 }
+<style>
+        /* Define the font size for the link text */
+        a {
+            font-size: 18px; /* You can adjust the value as needed */
+        }
