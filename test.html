@@ -1,86 +1,61 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>ARI Homepage</title>
+    <title>ARI Research</title>
     <style>
         body {
-            background-image: url('00078-1912640491.png'); /* Path to your image */
+            background-image: url('00078-1912640491.png');
             background-size: cover;
             background-repeat: no-repeat;
-            background-attachment: fixed; /* Ensures the background stays fixed while scrolling */
+            background-attachment: fixed;
             position: relative;
-            overflow: hidden; /* Prevent content from overflowing beyond the viewport */
-        }
-
-        /* Add a semi-transparent overlay */
-        .background-overlay {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background-color: rgba(0, 0, 0, 0.5); /* Adjust the alpha value for darkness */
-            z-index: -1;
-        }
-
-        /* Navbar styles */
-        .navbar {
-            background-color: #1A1A1A;
             overflow: hidden;
-            text-align: center; /* Center align the text within the navbar */
         }
 
-        .navbar a {
-            display: inline-block; /* Change from block to inline-block */
-            color: white;
-            text-align: center;
-            padding: 14px 16px;
-            text-decoration: none;
-        }
+        /* ... other existing styles ... */
 
-        .navbar a:hover {
-            background-color: #333;
-        }
-
-        /* Other existing styles */
-        a {
-            font-size: 18px;
-        }
-
-        body {
-            line-height: 1.2;
-            max-width: 1200px;
+        /* Container style */
+        .container {
+            max-width: 1000px;
             margin: 0 auto;
-            font-family: Arial, sans-serif;
-            background-color: #3D3D3D;
+            padding: 20px;
             color: #ffffff;
-            font-weight: normal;
+            background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent background for better readability */
+            border-radius: 10px; /* Rounded corners */
         }
 
-        /* Additional style for list items */
-        ul {
-            list-style-type: disc;
-            padding-left: 20px;
-        }
-
-        ul li {
-            margin-bottom: 10px;
-        }
-
-        /* Style for the hero section */
-        .hero {
-            padding: 200px 0;
+        .container h1 {
+            font-size: 32px;
             text-align: center;
-            color: #fff;
+            margin-bottom: 30px;
         }
 
-        .hero h1 {
-            font-size: 48px; /* Increased font size */
+        /* Research section styles */
+        .research-section {
+            padding: 20px;
+            border-bottom: 1px solid #444; /* Separator line */
             margin-bottom: 20px;
         }
 
-        .hero p {
-            font-size: 24px; /* Increased font size */
+        .research-title {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .research-description {
+            font-size: 18px;
+            line-height: 1.5;
+            margin-bottom: 10px;
+        }
+
+        a {
+            color: #007bff; /* Link color */
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
         }
     </style>
 </head>
@@ -89,25 +64,21 @@
 
     <!-- Navbar -->
     <div class="navbar">
-        <a href="home.html">Home</a>
-        <a href="news.html">News</a>
-        <a href="events.html">Events</a>
-        <a href="#research">Research</a>
-        <a href="#containment">Containment</a>
-        <a href="#facilities">Facilities</a>
-        <a href="#personnel">Personnel</a>
-        <a href="#safety">Safety</a>
-        <a href="#forum">Forum</a>
-        <a href="#resources">Resources</a>
-        <a href="#contact">Contact</a>
+        <!-- Existing navbar items -->
     </div>
 
-    <!-- Hero section -->
-    <div class="hero">
-        <h1>Welcome to the Aberration Research Institute</h1>
-        <p><i>Beyond the Shadows, Beneath the Surface, We Stand Guard.</i></p>
-    </div>
-      <!-- Rest of your content... -->
+    <div class="container">
+        <h1>Research at the Aberration Research Institute</h1>
+        <div class="research-section">
+            <div class="research-title">Project Omega-3: Aberration Studies</div>
+            <div class="research-description">
+                Our Project Omega-3 focuses on studying the behavior, characteristics, and potential applications of Class-3 Aberrations. Through rigorous experimentation and analysis, our researchers aim to uncover the underlying mechanisms that govern these anomalies.
+            </div>
+            <a href="#">Read More</a>
+        </div>
 
+        <!-- ... other research sections ... -->
+
+    </div>
 </body>
-</html>  
+</html>
