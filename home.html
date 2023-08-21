@@ -70,5 +70,18 @@
         <p>Stay alert, stay informed, and always be prepared.</p>
         <p><b>-Director [REDACTED]</b></p>
     </div>
+
+<!-- Before </body> tag -->
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        const hamburger = document.querySelector('.hamburger-menu');
+        const navigation = document.querySelector('.navigation-links');
+
+        hamburger.addEventListener('click', function () {
+            navigation.classList.toggle('active');
+        });
+    });
+</script>
+    
 </body>
 </html>
