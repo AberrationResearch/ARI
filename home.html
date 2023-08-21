@@ -3,11 +3,19 @@
 <head>
     <title>ARI homepage</title>
     <style>
+        /* Set the full-image background */
+        body {
+            background-image: url('00078-1912640491.png'); /* Path to your image */
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed; /* Ensures the background stays fixed while scrolling */
+            position: relative;
+            overflow: hidden; /* Prevent content from overflowing beyond the viewport */
+        }
 
-         body::before {
-            content: "";
-            display: block;
-            position: absolute;
+        /* Add a semi-transparent overlay */
+        .background-overlay {
+            position: fixed;
             top: 0;
             left: 0;
             width: 100%;
@@ -16,16 +24,6 @@
             z-index: -1;
         }
 
- /* Set the full-image background */
-        body {
-            background-image: url('00078-1912640491.png'); /* Path to your image */
-            background-size: cover;
-            background-repeat: no-repeat;
-            background-attachment: fixed; /* Ensures the background stays fixed while scrolling */
-        }
-
-        /* ... Other styles ... */
-        
         /* Navbar styles */
         .navbar {
             background-color: #1A1A1A;
@@ -71,6 +69,21 @@
         }
     </style>
 </head>
+<body>
+    <div class="background-overlay"></div>
+
+    <!-- Navbar -->
+    <div class="navbar">
+        <a href="#home">Home</a>
+        <a href="#news">News</a>
+        <a href="#events">Events</a>
+        <!-- Add more navigation links as needed -->
+    </div>
+
+    <!-- Rest of your content... -->
+
+</body>
+</html>
 <body>
     <!-- Navbar -->
     <div class="navbar">
