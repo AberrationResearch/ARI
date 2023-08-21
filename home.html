@@ -3,19 +3,6 @@
 <head>
     <title>ARI homepage</title>
     <style>
-
-
-        /* Additional CSS for active state of the navigation menu */
-.navigation-links.active {
-    display: block;
-    background-color: #3D3D3D; /* Use the same background color as the body */
-    padding: 20px;
-    position: absolute;
-    top: 60px;
-    right: 0;
-    width: 200px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-}
    
         a {
             font-size: 18px; 
@@ -30,60 +17,9 @@
            font-weight: normal; /* Change the font weight to normal */
        }
     
-/* Styling for the hamburger icon */
-.hamburger-menu {
-    display: none;
-    flex-direction: column;
-    cursor: pointer;
-    padding: 10px;
-}
-
-.bar {
-    width: 30px;
-    height: 4px;
-    background-color: #333; /* Change the color of the hamburger bars */
-    margin: 2px 0;
-}
-
-/* Styling for the navigation links */
-.navigation-links {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-
-.navigation-links li {
-    margin-bottom: 10px;
-}
-
-.navigation-links a {
-    text-decoration: none;
-    color: #777; /* Change the color of the navigation links */
-    font-size: 18px;
-    transition: color 0.3s ease; /* Add a smooth color transition on hover */
-}
-
-.navigation-links a:hover {
-    color: #555; /* Change the hover color of the navigation links */
-}
-
     </style>
 </head>
 <body>
-
-    <nav>
-    <div class="hamburger-menu">
-        <div class="bar"></div>
-        <div class="bar"></div>
-        <div class="bar"></div>
-    </div>
-    <ul class="navigation-links">
-        <li><a href="#">Home</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Research</a></li>
-        <!-- Add more links as needed -->
-    </ul>
-</nav>
     <div class="container">
         <h1>Welcome to the Aberration Research Institute Portal</h1>
         <p><i>Beyond the Shadows, Beneath the Surface, We Stand Guard.</i></p>
@@ -120,18 +56,5 @@
         <p>Stay alert, stay informed, and always be prepared.</p>
         <p><b>-Director [REDACTED]</b></p>
     </div>
-
-<!-- Before </body> tag -->
-<script>
-    document.addEventListener('DOMContentLoaded', function () {
-        const hamburger = document.querySelector('.hamburger-menu');
-        const navigation = document.querySelector('.navigation-links');
-
-        hamburger.addEventListener('click', function () {
-            navigation.classList.toggle('active');
-        });
-    });
-</script>
-    
 </body>
 </html>
