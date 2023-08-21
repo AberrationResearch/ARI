@@ -1,1 +1,145 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>ARI Events</title>
+    <style>
+       body {
+            background-image: url('00078-1912640491.png'); /* Path to your image */
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed; /* Ensures the background stays fixed while scrolling */
+            position: relative;
+            overflow: hidden; /* Prevent content from overflowing beyond the viewport */
+        }
 
+        /* Add a semi-transparent overlay */
+        .background-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5); /* Adjust the alpha value for darkness */
+            z-index: -1;
+        }
+
+        /* Navbar styles */
+        .navbar {
+            background-color: #1A1A1A;
+            overflow: hidden;
+        }
+
+        .navbar a {
+            float: left;
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        .navbar a:hover {
+            background-color: #333;
+        }
+ .events-container {
+            padding: 20px;
+        }
+
+        .event-card {
+            margin: 20px 0;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.1); /* Semi-transparent background */
+            border-radius: 10px;
+        }
+
+        .event-title {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .event-date,
+        .event-location {
+            font-size: 16px;
+            color: #aaa;
+            margin-bottom: 10px;
+        }
+
+        .event-description {
+            font-size: 18px;
+            margin-bottom: 20px;
+        }
+
+        .event-link {
+            font-size: 18px;
+            color: #007bff; /* Link color */
+            text-decoration: none;
+        }
+
+        .event-link:hover {
+            text-decoration: underline;
+        }
+        a {
+            font-size: 18px;
+        }
+
+        body {
+            line-height: 1.2;
+            max-width: 1200px;
+            margin: 0 auto;
+            font-family: Arial, sans-serif;
+            background-color: #3D3D3D;
+            color: #ffffff;
+            font-weight: normal;
+        }
+
+    </style>
+</head>
+<body>
+         <div class="background-overlay"></div>
+
+    <!-- Navbar -->
+    <div class="navbar">
+        <a href="home.html">Home</a>
+        <a href="news.html">News</a>
+        <a href="#events">Events</a>
+        <a href="#research">Research</a>
+        <a href="#containment">Containment</a>
+        <a href="#facilities">Facilities</a>
+        <a href="#personnel">Personnel</a>
+        <a href="#safety">Safety</a>
+        <a href="#forum">Forum</a>
+        <a href="#resources">Resources</a>
+        <a href="#contact">Contact</a>
+    </div>
+  <!-- Hero section -->
+    <div class="hero">
+        <h1>Upcoming Events</h1>
+        <p>Join us for exciting events, workshops, and training sessions at ARI</p>
+    </div>
+
+    <!-- Events container -->
+    <div class="events-container">
+        <!-- Event 1 -->
+        <div class="event-card">
+            <h2 class="event-title">Anomaly Research Workshop</h2>
+            <p class="event-date">September 5, 2023</p>
+            <p class="event-location">Main Research Facility</p>
+            <p class="event-description">Learn about the latest techniques in anomaly research...</p>
+            <a class="event-link" href="#register">Register Now</a>
+        </div>
+
+        <!-- Event 2 -->
+        <div class="event-card">
+            <h2 class="event-title">Containment Training Session</h2>
+            <p class="event-date">September 12, 2023</p>
+            <p class="event-location">Containment Facility Alpha</p>
+            <p class="event-description">Hands-on training session on containment protocols...</p>
+            <a class="event-link" href="#register">Register Now</a>
+        </div>
+
+        <!-- Add more events as needed -->
+    </div>
+
+</body>
+</html>
