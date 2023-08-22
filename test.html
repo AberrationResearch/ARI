@@ -1,84 +1,104 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>ARI Research</title>
+    <title>ARI Security Clearance Rank List</title>
     <style>
         body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 20px;
             background-image: url('00078-1912640491.png');
             background-size: cover;
             background-repeat: no-repeat;
             background-attachment: fixed;
             position: relative;
             overflow: hidden;
-        }
-
-        /* ... other existing styles ... */
-
-        /* Container style */
-        .container {
-            max-width: 1000px;
+            max-width: 1200px;
             margin: 0 auto;
-            padding: 20px;
             color: #ffffff;
-            background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent background for better readability */
-            border-radius: 10px; /* Rounded corners */
+            background-color: #3D3D3D;
+            font-weight: normal;
         }
 
-        .container h1 {
-            font-size: 32px;
+        /* Add a semi-transparent overlay */
+        .background-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            z-index: -1;
+        }
+
+        /* Navbar styles */
+        .navbar {
+            background-color: #1A1A1A;
+            overflow: hidden;
             text-align: center;
-            margin-bottom: 30px;
         }
 
-        /* Research section styles */
-        .research-section {
-            padding: 20px;
-            border-bottom: 1px solid #444; /* Separator line */
-            margin-bottom: 20px;
-        }
-
-        .research-title {
-            font-size: 24px;
-            font-weight: bold;
-            margin-bottom: 10px;
-        }
-
-        .research-description {
-            font-size: 18px;
-            line-height: 1.5;
-            margin-bottom: 10px;
-        }
-
-        a {
-            color: #007bff; /* Link color */
+        .navbar a {
+            display: inline-block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
             text-decoration: none;
         }
 
-        a:hover {
-            text-decoration: underline;
+        .navbar a:hover {
+            background-color: #333;
+        }
+
+        h1 {
+            color: #ffffff; /* Changed to match the rest of the text */
+        }
+
+        ol {
+            margin: 20px 0;
+        }
+
+        li {
+            margin-bottom: 10px;
+        }
+
+        .description {
+            margin-left: 20px;
+            font-style: italic;
+        }
+
+        .note {
+            color: #555;
+            font-size: 14px;
+            margin-top: 20px;
+        }
+
+        .section-title {
+            margin-top: 30px;
+            color: #444;
         }
     </style>
 </head>
 <body>
     <div class="background-overlay"></div>
-
-    <!-- Navbar -->
+      <!-- Navbar -->
     <div class="navbar">
-        <!-- Existing navbar items -->
+        <a href="home.html">Home</a>
+        <a href="aberrations.html">Aberrations</a>
+        <a href="news.html">News</a>
+        <a href="events.html">Events</a>
+        <a href="research.html">Research</a>
+        <a href="securityranks.html">Clearance Ranks</a>
+       
     </div>
 
-    <div class="container">
-        <h1>Research at the Aberration Research Institute</h1>
-        <div class="research-section">
-            <div class="research-title">Project Omega-3: Aberration Studies</div>
-            <div class="research-description">
-                Our Project Omega-3 focuses on studying the behavior, characteristics, and potential applications of Class-3 Aberrations. Through rigorous experimentation and analysis, our researchers aim to uncover the underlying mechanisms that govern these anomalies.
-            </div>
-            <a href="#">Read More</a>
-        </div>
-
-        <!-- ... other research sections ... -->
-
+    <!-- Hero section -->
+    <div class="hero">
+        <h1>Welcome to the Aberration Research Institute</h1>
+        <p><i>Beyond the Shadows, Beneath the Surface, We Stand Guard.</i></p>
     </div>
+
+    <!-- Rest of your content... -->
+
 </body>
 </html>
