@@ -4,16 +4,25 @@
     <title>ARI Aberrations</title>
     <style>
         body {
-            background-image: url('00078-1912640491.png'); /* Path to your image */
+            background-image: url('00078-1912640491.png');
             background-size: cover;
             background-repeat: no-repeat;
-            background-attachment: fixed; /* Ensures the background stays fixed while scrolling */
+            background-attachment: fixed;
             position: relative;
-            
+            line-height: 1.2;
+            max-width: 1200px;
+            margin: 0 auto;
+            font-family: Arial, sans-serif;
+            background-color: #3D3D3D;
+            color: #ffffff;
+            font-weight: normal;
         }
-a {
+
+        a {
             color: #888888; /* Light grey color */
+            font-size: 18px;
         }
+
         /* Add a semi-transparent overlay */
         .background-overlay {
             position: fixed;
@@ -21,7 +30,7 @@ a {
             left: 0;
             width: 100%;
             height: 100%;
-            background-color: rgba(0, 0, 0, 0.5); /* Adjust the alpha value for darkness */
+            background-color: rgba(0, 0, 0, 0.5);
             z-index: -1;
         }
 
@@ -29,11 +38,11 @@ a {
         .navbar {
             background-color: #1A1A1A;
             overflow: hidden;
-            text-align: center; /* Center align the text within the navbar */
+            text-align: center;
         }
 
         .navbar a {
-            display: inline-block; /* Change from block to inline-block */
+            display: inline-block;
             color: white;
             text-align: center;
             padding: 14px 16px;
@@ -42,21 +51,6 @@ a {
 
         .navbar a:hover {
             background-color: #333;
-        }
-
-        /* Other existing styles */
-        a {
-            font-size: 18px;
-        }
-
-        body {
-            line-height: 1.2;
-            max-width: 1200px;
-            margin: 0 auto;
-            font-family: Arial, sans-serif;
-            background-color: #3D3D3D;
-            color: #ffffff;
-            font-weight: normal;
         }
 
         /* Additional style for list items */
@@ -77,12 +71,11 @@ a {
         }
 
         .hero h1 {
-            font-size: 48px; /* Increased font size */
-            margin-bottom: 20px;
+            font-size: 48px;
         }
 
         .hero p {
-            font-size: 24px; /* Increased font size */
+            font-size: 24px;
         }
     </style>
 </head>
@@ -91,24 +84,20 @@ a {
 
     <!-- Navbar -->
     <div class="navbar">
-        <a href="home.html">Home</a>
+         <a href="home.html">Home</a>
+        <a href="aberrations.html">Aberrations</a>
         <a href="news.html">News</a>
         <a href="events.html">Events</a>
-        <a href="#research">Research</a>
-        <a href="#containment">Containment</a>
-        <a href="#facilities">Facilities</a>
-        <a href="#personnel">Personnel</a>
-        <a href="#safety">Safety</a>
-        <a href="#forum">Forum</a>
-        <a href="#resources">Resources</a>
-        <a href="#contact">Contact</a>
+        <a href="research.html">Research</a>
+        <a href="securityranks.html">Clearance Ranks</a>
     </div>
 
- <div class="container">
+    <div class="container">
         <h1>List of Aberrations</h1>
         <p>Explore the catalog of anomalous phenomena and aberrations studied by ARI.</p>
-        
+
         <ul>
+            <ul>
             <!-- List of aberrations -->
             <li><a href="#aberration1">ABR-001</a></li>
             <li><a href="#aberration2">ABR-002</a></li>
