@@ -1,16 +1,118 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <title>Leaflet Map</title>
-    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
-    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
-</head>
-<body>
-    <div id="map" style="height: 100vh; width: 100%;"></div>
 
-    <script>
-        var map = L.map('map').setView([0, 0], 2);  // Centered at [0, 0] (lat, long) and zoom level 2
-        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png').addTo(map);
-    </script>
+<head>
+    <title>ARI Aberration ABR-001</title>
+    <style>
+        body {
+            background-image: url('../00078-1912640491.png');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            position: relative;
+            overflow: hidden;
+            line-height: 1.2;
+            max-width: 1200px;
+            margin: 0 auto;
+            font-family: Arial, sans-serif;
+            background-color: #3D3D3D;
+            color: #ffffff;
+            font-weight: normal;
+        }
+
+        .background-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.7);
+            z-index: -1;
+        }
+
+        .navbar {
+            background-color: #1A1A1A;
+            overflow: hidden;
+            text-align: center;
+        }
+
+        .navbar a {
+            display: inline-block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: 18px;
+        }
+
+        .navbar a:hover {
+            background-color: #333;
+        }
+
+        .container {
+            padding: 20px;
+        }
+
+        .aberration-section {
+            font-size: 16px;
+            margin-bottom: 30px; /* Increased from 15px to 30px */
+        }
+
+        .aberration-section-large {
+            font-size: 18px;
+            margin-bottom: 40px; /* Increased from 15px to 40px */
+        }
+
+        .image-container {
+            float: right;
+            width: 375px;
+            border: 1px solid #ddd;
+            margin-left: 20px;
+            margin-bottom: 20px;
+        }
+
+        .image-container img {
+            width: 100%;
+            display: block;
+        }
+
+        .image-description {
+            text-align: center;
+            padding: 5px;
+            font-size: 14px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="background-overlay"></div>
+
+    <div class="navbar">
+        <a href="../home.html">Home</a>
+        <a href="../aberrations.html">Aberrations</a>
+        <a href="../news.html">News</a>
+        <a href="../events.html">Events</a>
+        <a href="../research.html">Research</a>
+        <a href="../securityranks.html">Clearance Ranks</a>
+    </div>
+
+    <div class="container">
+        <div class="image-container">
+            <img src="../Images/ABR001.jpg" alt="Description of Image">
+            <div class="image-description">Your Image Description Here</div>
+        </div>
+
+        <p class="aberration-section-large">ID #: ABR-001</p>
+        <p class="aberration-section-large">Codename: "Skyward Sentinel"</p>
+        <p class="aberration-section-large">Threat Classification: Class II: Controllable</p>
+        <p class="aberration-section-large">Description:</p>
+        <p class="aberration-section">ABR-001, renamed "Skyward Sentinel," is a captivating humanoid entity standing approximately 1.8 meters in height.
+        </p>
+        <p class="aberration-section-large">Containment Protocols and Precautions: </p>
+        <p class="aberration-section">ABR-001, now codenamed "Skyward Sentinel," is safely ensconced in a containment facility located deep within the secure corridors of the Aberration Research Institute (ARI) global headquarters.
+        </p>
+    </div>
+
 </body>
+
 </html>
